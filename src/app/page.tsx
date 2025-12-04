@@ -33,8 +33,8 @@ export default function Home() {
 			<div className={"col-start-2 col-end-3 row-start-3 row-end-5 flex flex-col w-fit h-fit self-end justify-self-end p-10"}>
 				<p className={"text-center text-[10rem] font-header leading-30"}><span className={"text-[#BF6734]"}>0</span>{number + 1}</p>
 				<div className={"flex border-2 border-white w-full h-fit"}>
-					<button onClick={() => addNumber(-1)} className={"cursor-pointer px-6 py-2 w-full border-r-2 border-white"}>{"<"}</button>
-					<button onClick={() => addNumber(1)} className={"cursor-pointer px-6 py-2 w-full"}>{">"}</button>
+					<button onClick={() => addNumber(-1)} className={"text-4xl cursor-pointer w-full border-r-2 border-white"}>{"<"}</button>
+					<button onClick={() => addNumber(1)} className={"text-4xl cursor-pointer w-full"}>{">"}</button>
 				</div>
 			</div>
 		</div>
