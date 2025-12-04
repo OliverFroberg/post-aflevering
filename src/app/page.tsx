@@ -1,6 +1,6 @@
 "use client";
 import useSWR from "swr";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -23,7 +23,7 @@ export default function Home() {
 		<div className={"grid grid-cols-[40%_auto] grid-rows-4 h-screen"}>
 			<div className={"bg-[#BF6734] col-span-full row-start-1 row-end-3"}></div>
 
-			<h1 className={"uppercase font-header col-start-1 col-end-2 row-start-1 row-end-2 p-6 text-white text-9xl font-bold"}>I'm <span
+			<h1 className={"uppercase font-header col-start-1 col-end-2 row-start-1 row-end-2 p-6 text-white text-9xl font-bold"}>I&#39;m <span
 				className={"text-black"}>a Ninja</span></h1>
 			<h2 className={"uppercase font-header col-start-1 col-end-2 row-start-2 row-end-3 px-4 font-bold text-6xl self-end"}>{ninja["title"]}</h2>
 			<p className={"col-start-1 col-end-2 row-start-3 row-end-4 px-4 py-2 text-xl"}>{ninja["text"]}</p>
